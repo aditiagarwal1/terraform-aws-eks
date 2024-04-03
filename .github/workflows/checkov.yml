@@ -12,7 +12,6 @@ jobs:
         uses: bridgecrewio/checkov-action@master
         with:
           directory: .
-          soft_fail: true
           download_external_modules: true
           github_pat: ${{ secrets.GH_PAT }}
         env:

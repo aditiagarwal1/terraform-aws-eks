@@ -26,6 +26,7 @@ locals {
 # to ensure that the downstream resources are created after both the cluster is ready and the sleep time has passed.
 # This was primarily added to give addons that need to be configured BEFORE data plane compute resources
 # enough time to create and configure themselves before the data plane compute resources are created.
+# comment
 resource "time_sleep" "this" {
   count = var.create ? 1 : 0
 

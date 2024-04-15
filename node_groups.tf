@@ -5,6 +5,8 @@ locals {
     http_put_response_hop_limit = 2
   }
 
+#test comment
+
   # EKS managed node group
   default_update_config = {
     max_unavailable_percentage = 33
